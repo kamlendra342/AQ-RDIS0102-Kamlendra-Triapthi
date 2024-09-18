@@ -18,11 +18,11 @@ function App() {
         // Format the fetched photos to match your initial photos structure
         const formattedPhotos = realData.map(photo => ({
           id: photo.id,
-          url: photo.download_url, // Using the correct key from API response
-          title: `Photo ${photo.id}`, // You can customize this as needed
+          url: photo.download_url, 
+          title: `Photo ${photo.id}`, 
         }));
 
-        setPhotos(prevPhotos => [...prevPhotos, ...formattedPhotos]); // Update the photos state
+        setPhotos(prevPhotos => [...prevPhotos, ...formattedPhotos]); 
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -45,7 +45,7 @@ function App() {
         {photos.map((photo) => (
           <img
             key={photo.id}
-            src={photo.url} // Ensure consistent use of the 'url' key
+            src={photo.url} 
             alt={photo.title}
             onClick={() => handlePhotoClick(photo)}
             style={{ cursor: 'pointer', margin: '10px', width: '250px' }}
