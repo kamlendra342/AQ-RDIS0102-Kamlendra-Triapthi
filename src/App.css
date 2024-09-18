@@ -1,0 +1,36 @@
+
+.app {
+  background: #000;
+  text-align: center;
+}
+.app h1{
+  color: aliceblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: xxx-large;
+}
+.main-photo img {
+  width: 1100px;
+  height: 900px;
+}
+
+.thumbnail-gallery {
+
+  overflow-x: scroll;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.thumbnail-gallery img {
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.thumbnail-gallery img:hover {
+  border-color: #007bff;
+}
